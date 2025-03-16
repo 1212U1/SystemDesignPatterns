@@ -1,4 +1,5 @@
-﻿using MementoPattern;
+﻿//Client code
+using MementoPattern;
 
 TextEditor textEditor = new TextEditor("ValueOne");
 TrackChange trackChange = new TrackChange();

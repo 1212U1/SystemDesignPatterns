@@ -1,4 +1,5 @@
-﻿namespace MementoPattern
+﻿//Holds the text editor changes
+namespace MementoPattern
 {
     public class EditorMemento
     {

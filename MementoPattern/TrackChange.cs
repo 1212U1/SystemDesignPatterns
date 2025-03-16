@@ -1,4 +1,5 @@
-﻿namespace MementoPattern
+﻿//Helps to track changes across the text editor. Undo and SaveChanges functionality
+namespace MementoPattern
 {
     public class TrackChange
     {
