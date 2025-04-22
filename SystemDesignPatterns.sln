@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacadePattern", "FacadePatt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlyWeightPattern", "FlyWeightPattern\FlyWeightPattern.csproj", "{678D7352-6FF6-41FB-A6AD-01812AB48248}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RideSharingApp", "RideSharingApp\RideSharingApp.csproj", "{BC55C8C0-E0FE-437B-A3AC-FFB515650488}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +131,10 @@ Global
 		{678D7352-6FF6-41FB-A6AD-01812AB48248}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{678D7352-6FF6-41FB-A6AD-01812AB48248}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{678D7352-6FF6-41FB-A6AD-01812AB48248}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC55C8C0-E0FE-437B-A3AC-FFB515650488}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC55C8C0-E0FE-437B-A3AC-FFB515650488}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC55C8C0-E0FE-437B-A3AC-FFB515650488}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC55C8C0-E0FE-437B-A3AC-FFB515650488}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
