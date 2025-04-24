@@ -24,10 +24,18 @@
         {
             if (_drivers.Count == 0) { passenger.Notify("No drivers found"); return; }
             FindNearestDriver(passenger, out Driver assignedDriver);
+            if (assignedDriver != null) { _drivers.Remove(assignedDriver); }
+            Ride ride = new Ride(assignedDriver, passenger, distanceToTravel, fareStrategy);
             //Fare Calculation
-            Double fareCalculated = fareStrategy.CalculateFare(assignedDriver.GetVehicle(), distanceToTravel);
+            Double fareCalculated = ride.CalculateFare();
             //Notify Passenger with fare and driver number
-            passenger.Notify("Ride booked for the fare of " + fareCalculated.ToString() + " for " + passenger.getName());
+            ride.notify("Ride booked for the fare of " + fareCalculated.ToString() + " for " + passenger.getName());
+
+            //ride status changes
+            ride.ChangeStatus(RideStatus.Ongoing);
+            //ride status changes
+            ride.ChangeStatus(RideStatus.Completed);
+            if (assignedDriver != null) { _drivers.Add(assignedDriver); }
         }
 
         public void FindNearestDriver(Passenger passenger, out Driver assignedDriver)
